@@ -43,7 +43,6 @@ import java.awt.event.WindowEvent;
 import javax.swing.BorderFactory;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
-import javax.swing.JApplet;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JComponent;
@@ -66,8 +65,9 @@ import javax.swing.event.ChangeListener;
  * @version $Revision: 1.15 $
  * 
  */
+@SuppressWarnings("removal")
 public final class Showcase
-    extends JApplet { 
+    extends javax.swing.JApplet { 
 
   /**
    * Panel with controls for the chart.
