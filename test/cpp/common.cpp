@@ -3,6 +3,10 @@
 #include <inttypes.h>
 #include <stdio.h>
 
+#ifndef PRIu64
+#error "PRIu64 is not defined."
+#endif
+
 #define info(...)                        \
     do {                                 \
         fprintf(stderr, "cpp_client: "); \
